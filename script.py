@@ -219,9 +219,9 @@ if __name__ == '__main__':
     parser.add_argument('-kfold', type=int, default=10, help='Number of folds (default=10)')
     parser.add_argument('-model', type=str, default='hisgradboost', help='Model name (defaul=hisgradboost). Support logreg, hisgradboost, svm, rf.')
     parser.add_argument('-select_method', type=str, default='rf', help='Feature selection method (default=rf). Support ada, xgb, rf.')
-    parser.add_argument('-skip_ft_selection', action='store_true', help='Skip feature selection process')
-    parser.add_argument('-smote', action='store_true', help='Apply SMOTE to handle class imbalance')
-    parser.add_argument('-scaler', action='store_true', help='Apply MinMaxScaler to normalize features')
+    parser.add_argument('--skip_ft_selection', action='store_true', help='Skip feature selection process')
+    parser.add_argument('--smote', action='store_true', help='Apply SMOTE to handle class imbalance')
+    parser.add_argument('--scaler', action='store_true', help='Apply MinMaxScaler to normalize features')
     args = parser.parse_args()
     
     main(args.i_mrna, args.i_label, args.kfold, args.model, args.select_method, args.skip_ft_selection, args.smote, args.scaler)
