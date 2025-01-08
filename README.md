@@ -84,7 +84,7 @@ python script.py -i_mrna data/data_mrna_seq_v2_rsem.txt -i_label data/data_clini
 ```
 project_colon_cancer/
 ├── data/
-│   ├── data_mrna_seq_v2_rsem.txt        # mRNA dataset (example)
+│   ├── data_mrna_seq_v2_rsem.txt       # mRNA dataset (example)
 │   ├── data_clinical_sample.txt        # Clinical labels (example)
 ├── script.py                           # Main script
 └── README.md                           # Documentation
